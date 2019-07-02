@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>广告信息发布系统</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/userupdata.css" />
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/userupdata.js"></script>
+	</head>
+
+	<body>
+		<div class="box">
+			<div class="header">
+				<div class="logo">
+					<a href=""><img src="images/logo.png" style="padding-bottom: 10px;width: 120px;height: 60px;" /></a>
+				</div>
+				<div style="width: 44%;float: left; height: 60px;padding-left: 3%;"></div>
+				<div class="header-right">
+					<div class="nav">
+						<a href="">首页</a>
+						<a href="">信息发布</a>
+						<a href="">退出</a>
+					</div>
+				</div>
+			</div>
+			<div class="container main">
+				<div id="main-left" class="col-lg-3 col-md-3 col-sm-3">
+					<div class="myimg">
+						<div class="main-myimg">
+							<a href=""><img src="images/default-portrait.png" /></a>
+							<div style="width: 100%;margin-top:20px; text-align: center;font-size:16px;">
+								<span>zyl199511</span>
+							</div>
+						</div>
+					</div>
+					<div class="user-list">
+						<ul>
+							<li style="background-color: rgba(5, 169, 243, .1)" >
+								<div class="menu">
+									<a href="user.html"><img src="images/info.png" /><span>基本信息</span></a>
+								</div>
+							</li>
+							<li>
+								<div class="menu">
+									<a href="product.html"><img src="images/product.png" /><span>我的产品</span></a>
+								</div>
+							</li>
+							<li>
+								<div class="menu">
+									<a href="applymember.html"><img src="images/member.png" /><span>我是会员</span></a>
+								</div>
+							</li>
+							<li>
+								<div class="menu">
+									<a href="dealerinfo.html"><img src="images/dealer.png" /><span>我是经销商</span></a>
+								</div>
+							</li>
+							<li>
+								<div class="menu">
+									<a href="org.html"><img src="images/org.png" /><span>机构信息</span></a>
+								</div>
+							</li>
+							<li>
+								<div class="menu">
+									<a href="account.html"><img src="images/account.png" /><span>个人账户</span></a>
+								</div>
+							</li>
+							<li>
+								<div class="menu">
+									<a href="order.html"><img src="images/order.png" /><span>订单记录</span></a>
+								</div>
+							</li>
+							<li>
+								<div class="menu">
+									<a href="moneygift.html"><img src="images/red.png" /><span>我的红包</span></a>
+								</div>
+							</li>
+							<li>
+								<div class="menu">
+									<a href="message.html"><img src="images/message.png" /><span>我的消息</span></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="main-right" class="col-lg-9 col-md-9 col-xs-9 col-sm-9 ">
+					<div>
+						<div class="topbar">
+							<div class="topbar-title">编辑用户信息</div>
+							<div class="topbar-btn">
+								<a href="">保存</a>
+								<a href="">取消</a>
+							</div>
+						</div>
+						<div class="section" style="margin-top: 30px;">
+							<div class="section-img" >
+								<img  src="images/default-portrait.png" id="icon">
+									<div  onmouseover="document.getElementById('btn').style.display = 'block'; " onmouseout="document.getElementById('btn').style.display = 'none' ;">
+										<input type="file" style="opacity:0; height: 200px; width: 200px; position: absolute; top: 0; left: 0; z-index: 9;" onchange="handleFiles(this,'icon')">
+										<p class="updata" id="btn">点击上传头像</p>
+									</div>
+							</div>
+							<div style="clear: both;"></div>
+							<div class="content" style="margin-left: 15%; height: 290px;margin: 0 auto;margin-top: 48px;">
+								<div class="content-title">
+									<div class="title-left" style="float: left; text-align: right;margin-right: 16px;">
+										<p>手机号码</p>
+										<p>邮箱</p>
+										<p>地址</p>
+										<p>联系人姓名</p>
+									</div>
+									<div class="title-right" style="float: left;text-align: left;margin-right: 16px;width: 200px;">
+										<p><input type="text" name="phone" id="phone" /></p>
+										<p><input type="text" name="email" id="email" /></p>
+										<p><input type="text" name="address" id="address" /></p>
+										<p><input type="text" name="contuser" id="contuser" /></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--<script type="text/javascript">
+			function handleFiles(obj, id) {
+				file = document.getElementById("icon");
+				var files = obj.files;
+				img = new Image();
+				if(window.URL) {
+					img.src = window.URL.createObjectURL(files[0]);
+					img.onload = function(e) {
+						window.URL.revokeObjectURL(this.src);
+					}
+				}
+				file.src = img.src;
+			}
+		</script>-->
+	</body>
+
+</html>
